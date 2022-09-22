@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloLogin.css">
+    <title>Atención de Pacientes</title>
+</head>
+<body>
+    <div id="fondoAtencion">
+        <div id="cabeceraAtencion">
+                <br>
+                <h1 style="text-align: center;">Atención Médica</h1>
+        </div>
+        <div class="contenidoAtencion">
+            <p>A continuación, ingrese el número de identificación del paciente</p>
+            <p>
+                Identificación
+                <input type="text" id="consultaID" name="consultaID" required>
+            </p>
+        </div>
+        <br>
+        <div class="contenidoAtencion">
+            <p>Comentario:</p>
+            <input type="text" id="inputComentario" name="inputComentario" placeholder="Ingrese aquí su comentario" required>
+            <!-- Se puede visualizar el historial médico? En dónde se ingresa la calificación del paciente, se puede acceder a esta
+            vista desde la vista de Consulta Pacientes y no usar la vista de Menú? -->
+            <p>
+                <button onclick="registrarComentario()">Registrar/Actualizar comentario</button>        
+            </p>
+        </div>
+        <br>
+        <div class="contenidoAtencion">
+            <p>
+                Calificación del paciente:
+                <input type="text" id="consultaID" name="consultaID" required>
+            </p>
+        </div>
+    </body>
+</html>

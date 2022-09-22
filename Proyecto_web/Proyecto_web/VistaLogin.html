@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Hospital Universitario Metropolitano</title>
+    <link rel="stylesheet" href="estiloLogin.css">
+    <script src="logicaLogin.js"></script>
+</head>
+<body>
+    <div id="fondoTexto">
+        <div id="cabecera">
+            <h1 id="nombreHospital">Hospital Universitario Metropolitano</h1>
+            <div id="ingresoLogin">
+                <form action="" method="put" name="iniciarSesion">
+                    <p>
+                        <img src="imagenLogin.jpg" width="60px">
+                    </p>
+                    <p>
+                        <img src="usuario.png" width="30px">
+                        <input type="text" id="user" name="user" placeholder="Nombre del usuario" required>
+                    </p>
+                    <p>
+                        <img src="candado.jpg" width="30px">
+                        <input type="text" id="password" name="password" placeholder="Contraseña" required>
+                        <img src="ojo.png" width="20px" onmouseover="mostrarPassword()" ; onmouseout="ocultarPassword()">
+                    </p>
+                    <p>
+                        <button onclick="iniciarSesion()">Iniciar sesión</button>
+                    </p>
+                </form>
+            </div>
+            <br>
+        </div>
+        <br>
+        <div id="formulario">
+            <p>Si aún no tiene una cuenta, complete el siguiente formulario. Sus datos serán verificados y se le
+                notificará vía correo electrónico los pasos que debe seguir para activar su cuenta</p>
+            <form name="formRegistro" method="post" action="">
+                <p>
+                    Nombre(s):
+                    <input type="text" id="nombre" name="nombre" required/>
+                </p>
+                <p>
+                    Apellido(s):
+                    <input type="text" id="apellido" name="apellido" required/>
+                </p>
+                <p>
+                Tipo de documento de identidad:
+                <select name="tipoID" id="tipoID" required>
+                    <option value="IDNoValido">Seleccione una opción</option>
+                    <option value="tarjetaIdentidad">Tarjeta de identidad</option>
+                    <option value="CedulaCiudadania">Cédula de ciudadanía</option>
+                    <option value="CedulaCiudadania">Cédula de extranjería</option>
+                </select>
+                </p>
+                <p>
+                    No. Identificación:
+                    <input type="text" id="numeroID" name="numeroID" required>
+                </p>
+                <p>
+                    Número de contacto (Tel/Cel):
+                    <input type="text" id="numeroContacto" name="numeroContacto" required>
+                </p>
+                <p>
+                    Correo electrónico:
+                    <input type="text" id="correo" name="correo" required>
+                </p>
+                <p>
+                    <form name="formFechaNac" method="post" action="">
+                        Fecha de nacimiento:
+                        <input type="date" name="fecha" min="1900-01-01" max="2021-12-31" required/>
+                    </form>
+                </p>
+                <p>
+                    Contraseña:
+                    <input type="password" id="contraseña" name="contraseña" required>
+                </p>
+                <p>
+                    Confirmar contraseña:
+                    <input type="password" id="confirmContraseña" name="confirmContraseña" required>
+                </p>
+                <p>
+                    <button onclick="enviarDatos()">Enviar</button>
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

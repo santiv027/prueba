@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="../Proyecto_web/EstyleLogin/estiloRegistrar.css">
+    <link rel="stylesheet" href="../Proyecto_web/EstyleLogin/estilos1.css">
+    <link rel="stylesheet" href="../Proyecto_web/imagen/pan.png">
+    
+    <title>Registro de citas médicas</title>
+</head>
+<body>
+
+
+  <main>
+
+    <div class="textoP">
+        <p>
+            <img class="izquierda" src="imagen/iconohum.png" style= "width:150px ; height:150px">
+            <aside>Solicita aquí tus citas médicas. Diligencia el formulario con todos los datos correspondientes a tu cita médica, nosotros recibiremos tu solicitud y la atenderemos a la mayor brevedad.</aside>
+            <div class="reset"></div>
+        </p>
+        
+          </div>
+
+
+    <form class="formulario" id="formulario">
+        <div>
+            <label for="nom_us" class="formulario__label" name="nom_us">Nombre</label>
+            <div class="formulario__grupo-input" name="nom_us">
+                <input type="text" class="formulario__input" name="nom_us" id="nom_us" placeholder="Nombres">
+            </div>
+        </div>
+
+        <div>
+            <label for="ape_us" class="formulario__label" name="ape_us">Apellidos</label>
+            <div class="formulario__grupo-input" name="ape_us">
+                <input type="text" class="formulario__input" name="ape_us" id="ape_us" placeholder="Apellidos">
+            </div>
+        </div>
+        
+        <div>
+            <label for="fk_pk_tdoc" class="formulario__label" name="fk_pk_tdoc">Tipo de Documento</label>
+            <select type="fk_pk_tdoc" class="formulario__input" name="fk_pk_tdoc" id="fk_pk_tdoc">
+                <option value="fk_pk_tdoc">Cédula de Ciudadania</option>
+                <option value="fk_pk_tdoc">Tarjeta de Identidad</option>
+                <option value="fk_pk_tdoc">Cédula de Extranjería</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="id_usuario" class="formulario__label" name="id_usuario">Número de documento</label>
+            <div class="formulario__grupo-input" name="id_usuario">
+                <input type="number" class="formulario__input" name="id_usuario" id="id_usuario" placeholder="Numero de documento">
+            </div>
+        </div>
+
+       
+
+        <div>
+            <label for="tel_us" class="formulario__label" name="tel_us">Número Teléfono</label>
+            <div class="formulario__grupo-input" name="tel_us">
+                <input type="text" class="formulario__input" name="tel_us" id="tel_us" placeholder="Número Teléfono">
+            </div>
+        </div>
+
+        <div>
+            <label for="dir_us" class="formulario__label" name="dir_us">Correo electrónico</label>
+            <div class="formulario__grupo-input" name="dir_us">
+                <input type="text" class="formulario__input" name="dir_us" id="dir_us" placeholder="Correo electrónico">
+            </div>
+        </div>
+
+        <div>
+            <label for="tipo_consul" class="formulario__label" name="tipo_consul">Tipo de Consulta</label>
+            <select type="tipo_consul" class="formulario__input" name="tipo_consul" id="tipo_consul">
+                <option value="tipo_consul">Seleccione una opción</option>
+                <option value="tipo_consul">Pediatria</option>
+                <option value="tipo_consul">Odontologia</option>
+                <option value="tipo_consul">Ginecologia</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="tipo_medico" class="formulario__label" name="tipo_medico">Seleccione el médico</label>
+            <select type="tipo_medico" class="formulario__input" name="tipo_medico" id="tipo_medico">
+                <option value="tipo_medico">Seleccione una opción</option>
+                <option value="tipo_medico">Calos Mosquera...</option>
+                <option value="tipo_medico">Camila Roa...</option>
+                <option value="tipo_medico">Fernanda Ortiz...</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="time_fech" class="formulario__label" name="time_fech">Fecha de la cita</label>
+            <div class="formulario__grupo-input" name="time_fech">
+                <input type="date" name="fecha" min="1900-01-01" max="2025-12-31" required/>
+            </div>
+        </div>
+
+        <div>
+            <label for="time_fech" class="formulario__label" name="time_fech">Hora de la cita</label>
+            <div class="formulario__grupo-input" name="time_fech">
+                <input type="time" name="hora" min="6:00" max="22:00" step="3600" />
+            </div>
+        </div>
+    
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <button href="" type="submit" class="formulario__btn">Solicitar Cita</button>
+        </div>
+        
+        
+    </form>
+
+    <div>
+        <p>
+            <button type="submit" value="ver_terminos" class="terminos__btn">Ver terminos</button>
+            <input  type="checkbox" name="Aceptar"/> Aceptar terminos y condiciones
+        </p>
+    </div>
+
+    <div class="portal_text">
+        <p>
+            En este portal podras consultar tu historial medico 
+            <br><br>
+            <button type="submit" value="consultar" class="terminos__btn">Consultar</button>
+        </p>
+
+    </div>
+</main>  
+  
+
+
+</body>
+</html>

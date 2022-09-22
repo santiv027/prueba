@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="../Proyecto_web/EstyleLogin/estiloRegistrar.css">
+    <link rel="stylesheet" href="../Proyecto_web/EstyleLogin/estilos1.css">
+    <link rel="stylesheet" href="../Proyecto_web/imagen/pan.png">
+    
+    <title>Administrar medicos</title>
+</head>
+<body>
+
+
+  <main>
+    <div class="textoP">
+        <p>
+            <img class="derecha" src="imagen/iconohum.png" style= "width:150px ; height:150px">
+                <h1>
+                    <aside>Hospital Universitario Metropolitano</aside>
+                </h1>
+            <div class="reset"></div>
+        </p>
+    </div>
+    <div class="textoM">
+        <h1 >
+            Control de médicos
+        </h1>
+    </div>
+    <form>
+        <div  class="formulario_med">
+            <p  class="formulario__label" name="id_medico">
+                Número identificación médico <input type="number" class="formulario__input2" name="id_medico" id="id_medico" placeholder="Numero de identificación">
+                <button href="" type="submit" class="formulario__btn2">Buscar</button>
+            </p> 
+        </div> 
+    </form>
+    <form class="formulario" id="formulario">
+
+        
+        <div>
+            <label for="nom_med" class="formulario__label" name="nom_med">Nombre</label>
+            <div class="formulario__grupo-input" name="nom_med">
+                <input type="text" class="formulario__input" name="nom_med" id="nom_med" placeholder="Nombres">
+            </div>
+        </div>
+
+        <div>
+            <label for="ape_med" class="formulario__label" name="ape_med">Apellidos</label>
+            <div class="formulario__grupo-input" name="ape_med">
+                <input type="text" class="formulario__input" name="ape_med" id="ape_med" placeholder="Apellidos">
+            </div>
+        </div>
+
+        <div>
+            <label for="tipo_espec_med" class="formulario__label" name="tipo_espec_med">Especialidad</label>
+            <select type="tipo_espec_med" class="formulario__input" name="tipo_espec_med" id="tipo_espec_med">
+                <option value="tipo_espec_med">Seleccione una opción</option>
+                <option value="tipo_espec_med">Pediatria</option>
+                <option value="tipo_espec_med">Odontologia</option>
+                <option value="tipo_espec_med">Ginecologia</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="dir_med" class="formulario__label" name="dir_med">Correo electrónico</label>
+            <div class="formulario__grupo-input" name="dir_med">
+                <input type="text" class="formulario__input" name="dir_med" id="dir_med" placeholder="Correo electrónico">
+            </div>
+        </div>
+
+        <div>
+            <label for="fk_pk_tdoc_med" class="formulario__label" name="fk_pk_tdoc_med">Tipo de Documento</label>
+            <select type="fk_pk_tdoc_med" class="formulario__input" name="fk_pk_tdoc_med" id="fk_pk_tdoc_med">
+                <option value="fk_pk_tdoc_med">Cédula de Ciudadania</option>
+                <option value="fk_pk_tdoc_med">Tarjeta de Identidad</option>
+                <option value="fk_pk_tdoc_med">Cédula de Extranjería</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="id_med" class="formulario__label" name="id_med">Número de documento</label>
+            <div class="formulario__grupo-input" name="id_med">
+                <input type="number" class="formulario__input" name="id_med" id="id_med" placeholder="Numero de documento">
+            </div>
+        </div>
+
+        <div>
+            <label for="tel_med" class="formulario__label" name="tel_med">Número Teléfono</label>
+            <div class="formulario__grupo-input" name="tel_med">
+                <input type="text" class="formulario__input" name="tel_med" id="tel_med" placeholder="Número Teléfono">
+            </div>
+        </div>
+
+        <div>
+            <label for="sede_med" class="formulario__label" name="sede_med">Sede</label>
+            <div class="formulario__grupo-input" name="sede_med">
+                <input type="text" class="formulario__input" name="sede_med" id="sede_med" placeholder="Sede">
+            </div>
+        </div>
+        
+        <div class="formulario__grupo-btn-med">
+            <button href="" type="submit" class="formulario__btn">Actualizar datos</button>
+            <button href="" style="margin-left: 15px; margin-right: 15px" type="submit" class="formulario__btn4">Registrar médico</button>
+            <button href="" type="submit" class="formulario__btn3">Eliminar médico</button>
+        </div>
+        
+        
+        
+    </form>
+ 
+</main>  
+ 
+</body>
+</html>

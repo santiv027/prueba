@@ -1,0 +1,95 @@
+/* Estilo de la vista LOGIN */
+#fondoTexto {
+    background-image: url("fondoLogin.jpg");
+    margin: auto;
+    width: 500px;
+    padding: 20px 100px;
+    text-align: center
+}
+
+#cabecera {
+    background-color: rgb(255, 255, 255);
+    margin:auto;
+    width: 400px;
+    border: 2px solid rgba(255, 255, 255);
+    padding: 3px 60px;
+    text-align: center;
+    
+}
+
+#ingresoLogin {
+    background-color: rgba(40, 108, 233, 0.822);
+    margin:auto;
+    width: 400px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    text-align: center;
+    
+}
+
+#formulario {
+    background-color: rgba(236, 238, 240, 0.822);
+    margin: auto;
+    width: 400px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    padding: 3px 60px 20px;
+    text-align: center;
+    font-size:smaller;
+    
+}
+
+/* Estilo de la vista Consulta de Pacientes */
+
+#fondoConsulta {
+    background-image: url("fondoConsulta.jpg");
+    margin:auto;
+    width: fit-content;
+    height: 700px;
+    text-align: center
+    
+}
+
+#cabeceraConsulta {
+    background-color: rgba(0, 0, 0, 0.137);
+    margin:auto;
+    width: 400px;
+    padding: 5px 0px;
+    
+}
+
+#tablaPacientes {
+    background-color: rgba(236, 238, 240, 0.822);
+    margin: auto;
+    width: 800px;
+    height: 450px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    padding: 3px 60px;
+    
+}
+
+#encabezadoTablaPac {
+    background-color: rgba(54, 77, 99, 0.212);
+}
+
+/* Estilo de la Vista Atención */
+
+#fondoAtencion {
+    background-image: url("FondoAtencionMed.jpg");
+    margin:auto;
+    width: 1000px;
+    height: 700px;
+    
+}
+
+.contenidoAtencion {
+    background-color: rgba(236, 238, 240, 0.822);
+    margin: auto;
+    width: 600px;
+    height: auto;
+    padding: 10px 20px;
+}
+
+#inputComentario {
+    width: 580px;
+    height: 200px;
+        
+}

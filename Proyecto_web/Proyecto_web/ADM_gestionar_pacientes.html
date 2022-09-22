@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="../Proyecto_web/EstyleLogin/estiloRegistrar.css">
+    <link rel="stylesheet" href="../Proyecto_web/EstyleLogin/estilos1.css">
+    <link rel="stylesheet" href="../Proyecto_web/imagen/pan.png">
+    
+    <title>Administracion de pacientes</title>
+</head>
+<body>
+
+
+  <main>
+    <div class="textoP">
+        <p>
+            <img class="derecha" src="imagen/iconohum.png" style= "width:150px ; height:150px">
+                <h1>
+                    <aside>Hospital Universitario Metropolitano</aside>
+                </h1>
+            <div class="reset"></div>
+        </p>
+    </div>
+    <div class="textoM">
+        <h1 >
+            Control de pacientes
+        </h1>
+    </div>
+    <form>
+        <div  class="formulario_med">
+            <p  class="formulario__label" name="id_paciente">
+                Número identificación paciente <input type="number" class="formulario__input2" name="id_paciente" id="id_paciente" placeholder="Numero de identificación">
+                <button href="" type="submit" class="formulario__btn2">Buscar</button>
+            </p> 
+        </div> 
+    </form>
+    <form class="formulario" id="formulario">
+
+        
+        <div>
+            <label for="nom_us" class="formulario__label" name="nom_us">Nombre</label>
+            <div class="formulario__grupo-input" name="nom_us">
+                <input type="text" class="formulario__input" name="nom_us" id="nom_us" placeholder="Nombres">
+            </div>
+        </div>
+
+        <div>
+            <label for="ape_us" class="formulario__label" name="ape_us">Apellidos</label>
+            <div class="formulario__grupo-input" name="ape_us">
+                <input type="text" class="formulario__input" name="ape_us" id="ape_us" placeholder="Apellidos">
+            </div>
+        </div>
+
+        <div>
+            <label for="time_fech" class="formulario__label" name="time_fech">Fecha de nacimiento</label>
+            <div class="formulario__grupo-input" name="time_fech">
+                <input type="date" name="fecha" min="1900-01-01" max="2025-12-31" required/>
+            </div>
+        </div>
+
+        <div>
+            <label for="dir_us" class="formulario__label" name="dir_us">Correo electrónico</label>
+            <div class="formulario__grupo-input" name="dir_us">
+                <input type="text" class="formulario__input" name="dir_us" id="dir_us" placeholder="Correo electrónico">
+            </div>
+        </div>
+
+        <div>
+            <label for="fk_pk_tdoc" class="formulario__label" name="fk_pk_tdoc">Tipo de Documento</label>
+            <select type="fk_pk_tdoc" class="formulario__input" name="fk_pk_tdoc" id="TDOC">
+                <option value="fk_pk_tdoc">Cédula de Ciudadania</option>
+                <option value="fk_pk_tdoc">Tarjeta de Identidad</option>
+                <option value="fk_pk_tdoc">Cédula de Extranjería</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="id_usuario" class="formulario__label" name="id_usuario">Número de documento</label>
+            <div class="formulario__grupo-input" name="id_usuario">
+                <input type="number" class="formulario__input" name="id_usuario" id="id_usuario" placeholder="Numero de documento">
+            </div>
+        </div>
+
+        <div>
+            <label for="tel_us" class="formulario__label" name="tel_us">Número Teléfono</label>
+            <div class="formulario__grupo-input" name="tel_us">
+                <input type="text" class="formulario__input" name="tel_us" id="tel_us" placeholder="Número Teléfono">
+            </div>
+        </div>
+
+        <div>
+            <label for="sede_med" class="formulario__label" name="sede_med">Sede</label>
+            <div class="formulario__grupo-input" name="sede_med">
+                <input type="text" class="formulario__input" name="sede_med" id="sede_med" placeholder="Sede">
+            </div>
+        </div>
+        
+        <div class="formulario__grupo-btn-med">
+            <button href="" type="submit" class="formulario__btn">Actualizar datos</button>
+            <button href="" style="margin-left: 15px; margin-right: 15px" type="submit" class="formulario__btn3">Eliminar paciente</button>
+            <button href=""  type="submit" class="formulario__btn">Ver historial del paciente</button>
+            
+        </div>
+        
+        
+        
+    </form>
+ 
+</main>  
+ 
+</body>
+</html>
